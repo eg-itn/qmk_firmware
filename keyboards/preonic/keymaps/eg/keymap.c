@@ -90,7 +90,7 @@ enum custom_keycodes {
  * +------+------+------+------+------+------+------+------+------+------+------+------+
  * │      │      │      │      │      │      │      │      │      │      │      │      │
  * +------+------+------+------+------+------+------+------+------+------+------+------+
- * │      │      │      │      │      │      │      │      │      │      │      │      │
+ * │      │      │      │      │      │ APP  │ APP  │      │      │      │      │      │
  * +------+------+------+------+------+------+------+------+------+------+------+------+
  */
 [_LAYER3] = LAYOUT_ortho_5x12( \
@@ -98,7 +98,7 @@ enum custom_keycodes {
     KC_TRNS, KC_TRNS, KC_TRNS, KC_UP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_UP, KC_TRNS, KC_TRNS, KC_TRNS, \
     KC_TRNS, KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS, \
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS \
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_APP, KC_APP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS \
     ),
 
 /* LAYER4
