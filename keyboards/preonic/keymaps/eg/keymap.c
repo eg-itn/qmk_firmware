@@ -13,6 +13,7 @@ enum custom_keycodes {
     LAYER2,
     LAYER3,
     LAYER4,
+    SMENU  // Shift+Menu(App)
 };
 
  const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = { \
@@ -98,7 +99,7 @@ enum custom_keycodes {
     KC_TRNS, KC_TRNS, KC_TRNS, KC_UP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_UP, KC_TRNS, KC_TRNS, KC_TRNS, \
     KC_TRNS, KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS, \
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_APP, KC_APP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS \
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, SMENU, SMENU, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS \
     ),
 
 /* LAYER4
@@ -123,3 +124,17 @@ enum custom_keycodes {
     ) 
 
 };
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+    case SMENU:
+    // If key is being pressed, send shift + Menu
+       if (record->event.pressed) {
+         register_code(KC_LSFT);
+         tap_code(KC_APP);
+         unregister_code(KC_LSFT);
+       }
+       break;
+  }
+  return true;
+}
