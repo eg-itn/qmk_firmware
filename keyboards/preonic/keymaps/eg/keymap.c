@@ -13,7 +13,11 @@ enum custom_keycodes {
     LAYER2,
     LAYER3,
     LAYER4,
-    SMENU  // Shift+Menu(App)
+    SMENU,  // Shift+Menu(App)
+    CTRLZ, // Ctrl+Z
+    CTRLX, // Ctrl+X
+    CTRLC, // Ctrl+C
+    CTRLV // Ctrl+V
 };
 
  const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = { \
@@ -47,7 +51,7 @@ enum custom_keycodes {
  * +------+------+------+------+------+------+------+------+------+------+------+------+
  * │      │      │  [   │  ]   │  \   │Enter │      │  Ins │ Home │ PgUp │ Bksp │      │
  * +------+------+------+------+------+------+------+------+------+------+------+------+
- * │      │      │      │      │      │      │      │  Del │  End │ PgDn │      │      │
+ * │      │ CTRLZ│ CTRLX│ CTRLC│ CTRLV│      │      │  Del │  End │ PgDn │      │      │
  * +------+------+------+------+------+------+------+------+------+------+------+------+
  * │      │      │      │      │      │      │      │      │      │      │      │      │
  * +------+------+------+------+------+------+------+------+------+------+------+------+
@@ -56,7 +60,7 @@ enum custom_keycodes {
     KC_F12, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, \
     KC_TRNS, KC_TRNS, KC_LPRN, KC_RPRN, KC_MINS, KC_EQL, KC_TRNS, KC_PSCR, KC_SLCK, KC_PAUS, KC_TRNS, KC_TRNS, \
     KC_TRNS, KC_TRNS, KC_LBRC, KC_RBRC, KC_BSLS, KC_ENT, KC_TRNS, KC_INS, KC_HOME, KC_PGUP, KC_BSPC, KC_TRNS, \
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_DEL, KC_END, KC_PGDN, KC_TRNS, KC_TRNS, \
+    KC_TRNS, CTRLZ, CTRLX, CTRLC, CTRLV, KC_TRNS, KC_TRNS, KC_DEL, KC_END, KC_PGDN, KC_TRNS, KC_TRNS, \
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS \
     ),
 
@@ -135,6 +139,42 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
          unregister_code(KC_LSFT);
        }
        break;
+    
+    case CTRLZ:
+    // If key is being pressed, send ctrl + z
+         if (record->event.pressed) {
+            register_code(KC_LCTL);
+            tap_code(KC_Z);
+            unregister_code(KC_LCTL);
+         }
+        break;
+    
+    case CTRLX:
+    // If key is being pressed, send ctrl + x
+        if (record->event.pressed) {
+            register_code(KC_LCTL);
+            tap_code(KC_X);
+            unregister_code(KC_LCTL);
+        }
+        break;
+
+    case CTRLC:
+    // If key is being pressed, send ctrl + c
+        if (record->event.pressed) {
+            register_code(KC_LCTL);
+            tap_code(KC_C);
+            unregister_code(KC_LCTL);
+        }
+        break;
+
+    case CTRLV:
+    // If key is being pressed, send ctrl + v
+        if (record->event.pressed) {
+            register_code(KC_LCTL);
+            tap_code(KC_V);
+            unregister_code(KC_LCTL);
+        }
+        break;
   }
   return true;
 }
