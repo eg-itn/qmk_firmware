@@ -108,7 +108,7 @@ enum custom_keycodes {
 
 /* LAYER4
  * ┌------+------+------+------+------+------+------+------+------+------+------+------+
- * │      │      │      │      │      │      │      │      │      │Ld Tog│      │ Reset│
+ * │      │      │      │      │      │      │      │      │      │Ld Tog│      │      │
  * +------+------+------+------+------+------+------+------+------+------+------+------+
  * │      │      │      │      │      │      │      │      │      │      │      │      │
  * +------+------+------+------+------+------+------+------+------+------+------+------+
@@ -116,15 +116,15 @@ enum custom_keycodes {
  * +------+------+------+------+------+------+------+------+------+------+------+------+
  * │      │      │      │      │      │      │      │      │      │      │      │      │
  * +------+------+------+------+------+------+------+------+------+------+------+------+
- * │      │      │      │      │      │      │      │      │      │      │      │      │
+ * │      │      │      │      │      │      │      │      │      │      │      │ Reset│
  * +------+------+------+------+------+------+------+------+------+------+------+------+
  */
 [_LAYER4] = LAYOUT_ortho_5x12( \
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, RGB_TOG, KC_TRNS, RESET, \
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, RGB_TOG, KC_TRNS, KC_TRNS, \
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS \
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, RESET \
     ) 
 
 };
