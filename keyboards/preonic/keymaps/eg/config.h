@@ -15,13 +15,6 @@
  */
 
 #pragma once
-<<<<<<< HEAD:keyboards/preonic/keymaps/pezhore/config.h
-#define UNICODE_SELECTED_MODES UNICODE_MODE_WINCOMPOSE, UNICODE_MODE_LINUX, UNICODE_MODE_MACOS
-#ifdef AUDIO_ENABLE
-    #define STARTUP_SONG SONG(PREONIC_SOUND)
-    // #define STARTUP_SONG SONG(NO_SOUND)
-=======
->>>>>>> 9495c546fb (custom):keyboards/preonic/keymaps/eg/config.h
 
 #ifdef AUDIO_ENABLE
 #    define STARTUP_SONG SONG(PREONIC_SOUND)
@@ -56,6 +49,11 @@
 
 
 #define MOUSEKEY_MOVE_DELTA 1
-#define MOUSEKEY_MAX_SPEED 15
+#define MOUSEKEY_MAX_SPEED 30
 #define MOUSEKEY_TIME_TO_MAX 40
-#define TAPPING_TERM 150
+#define TAPPING_TERM 200
+
+
+// MOUSE TURBO SETTING
+// #define MOUSE_TURBO_CLICK_PERIOD 200
+// #define MOUSE_TURBO_CLICK_KEY KC_BTN1

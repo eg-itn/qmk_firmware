@@ -118,10 +118,10 @@ inline void ergodox_led_all_set(uint8_t n) {
     ergodox_right_led_3_set(n);
 }
 
-enum ergodox_ez_keycodes {
-    LED_LEVEL = QK_KB_0,
-    TOGGLE_LAYER_COLOR,
-};
+// enum ergodox_ez_keycodes {
+//     LED_LEVEL = QK_KB_0,
+//     TOGGLE_LAYER_COLOR,
+// };
 
 #ifndef WEBUSB_ENABLE
 #    define WEBUSB_PAIR KC_NO

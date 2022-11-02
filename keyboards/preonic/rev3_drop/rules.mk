@@ -1,3 +1,9 @@
+# MCU name
+MCU = STM32F303
+
+# Bootloader selection
+BOOTLOADER = stm32-dfu
+
 # Build Options
 #   change yes to no to disable
 #
@@ -18,3 +24,5 @@ DIP_SWITCH_ENABLE = yes
 RGB_MATRIX_ENABLE = no
 
 SRC += matrix.c
+
+LAYOUTS = ortho_5x12

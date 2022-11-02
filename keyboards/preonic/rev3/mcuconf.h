@@ -14,8 +14,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#pragma once
-
 #include_next <mcuconf.h>
 
 // The SysTick timer from the normal quantum/stm32 uses TIM2 -- the WS2812 pin used
