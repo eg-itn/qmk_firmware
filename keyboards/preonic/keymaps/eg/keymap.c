@@ -21,11 +21,8 @@ enum custom_keycodes {
     CTRLV, // Ctrl+V
     SHRX, // ShareX capture shortcut(Shift+Win+A)
     BNDC, // Bandicam capture shortcut(Ctrl+Shift+Alt+S)
-<<<<<<< HEAD
     TURBO,  // Mouse Click Turbo
     TGTP,  // Toggle Always on Top(Ctrl+Shift+Alt+T)
-=======
->>>>>>> e394b68c1e (add capture shortcuts)
 };
 
  const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -208,7 +205,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         }
         break;
 
-<<<<<<< HEAD
     case TGTP:
     // If key is being pressed, send ctrl + shift + alt + t
         if (record->event.pressed) {
@@ -222,8 +218,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         }
         break;
 
-=======
->>>>>>> e394b68c1e (add capture shortcuts)
   }
 
   // MOUSE TURBO
