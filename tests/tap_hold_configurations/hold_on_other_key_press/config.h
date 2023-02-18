@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:tests/tap_hold_configurations/hold_on_other_key_press/config.h
 /* Copyright 2022 Vladislav Kucheriavykh
+========
+/* Copyright 2020 QMK
+>>>>>>>> master:keyboards/keychron/v7/halconf.h
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

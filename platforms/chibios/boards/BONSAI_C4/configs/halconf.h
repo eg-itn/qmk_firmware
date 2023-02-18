@@ -15,9 +15,13 @@
  */
 #pragma once
 
+<<<<<<<< HEAD:platforms/chibios/boards/BONSAI_C4/configs/halconf.h
 #ifndef HAL_USE_SPI
 #    define HAL_USE_SPI TRUE
 #endif
+========
+#include_next <mcuconf.h>
+>>>>>>>> master:keyboards/handwired/tractyl_manuform/5x6_right/f303/mcuconf.h
 
 #ifndef HAL_USE_I2C
 #    define HAL_USE_I2C TRUE
