@@ -117,7 +117,7 @@ enum custom_keycodes {
  * +------+------+------+------+------+------+------+------+------+------+------+------+
  * │      │      │      │      │      │      │      │      │      │ Mute │ Vol- │ Vol+ │
  * +------+------+------+------+------+------+------+------+------+------+------+------+
- * │      │      │      │      │      │      │      │      │      │      │      │      │
+ * │      │      │      │      │      │      │      │      │      │PrevTr|Ply/Ps|NextTr│
  * +------+------+------+------+------+------+------+------+------+------+------+------+
  * │      │      │      │      │      │      │      │      │      │      │      │      │
  * +------+------+------+------+------+------+------+------+------+------+------+------+
@@ -127,7 +127,7 @@ enum custom_keycodes {
 [_LAYER4] = LAYOUT_ortho_5x12(
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, RGB_TOG, KC_BRID, KC_BRIU,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_MUTE, KC_VOLD, KC_VOLU,
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_MPRV, KC_MPLY, KC_MNXT,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, QK_BOOT
     )
